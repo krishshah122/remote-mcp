@@ -125,5 +125,4 @@ def categories():
         return f'{{"error": "Could not load categories: {str(e)}"}}'
 
 
-if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=8000)
+app = mcp.asgi_app
